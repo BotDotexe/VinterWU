@@ -1,0 +1,49 @@
+#wrapperNav{
+    display: grid;
+    margin:0;
+    height: 100vh;
+    width: 100vw;
+    grid-template:10% repeat(2,26%) 27% 10% / 20% 60% 20%;
+    grid-template-areas: 
+    "header header header"
+    "aside1 aside1 aside1"
+    "aside nav aside2"
+    "aside nav aside2"
+    "footer footer footer";
+}
+#nav{
+    grid-area: nav;
+    background-color: green;
+    display: flex;
+    justify-content: space-evenly;
+}
+#aside1{
+    grid-area: aside1;
+    background-color: orange;
+}
+#aside2{
+    grid-area: aside2;
+    background-color: orange;
+}
+
+#aside{
+    grid-area: aside;
+    background-color: orange;
+}
+
+#header{
+    grid-area: header;
+    background-color: aqua;
+}
+
+#footer{
+    grid-area: footer;
+    background-color: hotpink;
+}
+.border{
+    border:2px solid black;
+}
+
+
+
+
