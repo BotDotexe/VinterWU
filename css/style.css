@@ -12,6 +12,7 @@
     "footer footer footer";
 }
 #wrappercards{
+    
     display: grid;
     margin: 0;
     height: 100vh;
@@ -118,11 +119,11 @@ a:hover{
 
 .cards{
     display: flex;
-    border: 2px solid black;
     border-radius: 50px;
     height: 40%;
     width: 30%;
     overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
 }
 
 .cardstitle{
@@ -130,13 +131,11 @@ a:hover{
     text-align: center;
     height: 20%;
     width: 100%;
-    border: 2px solid black;
-    background-color: white;
+    background-color: whitesmoke;
     
 }
 #cards1{
     background-image:url(../img/images.jpg);
     background-repeat: no-repeat
-    
     
 }
