@@ -47,7 +47,7 @@ a:hover{
     width: 100%;
     height: 30px;
     background-color: orange;
-    background-image: linear-gradient(to bottom, orange, yellow);
+    background-image: linear-gradient(to bottom, orange, white);
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -56,17 +56,23 @@ a:hover{
 .aside1{
     grid-area: aside1;
     
-    
+
 }
 .aside2{
     grid-area: aside2;
-    background-color: orange;
-    background-image: linear-gradient(to bottom, orange, white);
+    border: 2px black;
+    border-left: none;
+    border-top: solid;
+    border-bottom: solid;
+    padding: 20px;
 }
 
 .aside{
     grid-area: aside;
-    
+        border: 2px black;
+    border-left: none;
+    border-top: solid;
+    border-bottom: solid;
 }
 
 .header{
@@ -136,6 +142,16 @@ a:hover{
 }
 #cards1{
     background-image:url(../img/images.jpg);
-    background-repeat: no-repeat
-    
+    background-repeat: no-repeat;
+}
+
+#textboxmainright{
+    margin-top: 30px;
+}
+
+.arima-arima {
+  font-family: "Arima", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
 }
