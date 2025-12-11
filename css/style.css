@@ -55,7 +55,7 @@ a:hover{
 }
 .aside1{
     grid-area: aside1;
-    
+    display: flex;
 
 }
 .aside2{
@@ -68,11 +68,14 @@ a:hover{
 }
 
 .aside{
+    display: grid;
     grid-area: aside;
         border: 2px black;
     border-left: none;
     border-top: solid;
     border-bottom: solid;
+    height: auto;
+    width: auto;
 }
 
 .header{
@@ -143,6 +146,9 @@ a:hover{
 #cards1{
     background-image:url(../img/images.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
 }
 
 #textboxmainright{
@@ -154,4 +160,17 @@ a:hover{
   font-optical-sizing: auto;
   font-weight: 100;
   font-style: normal;
+}
+
+#aside1pictureHamburger{
+
+    border-radius: 50px;
+    overflow: hidden;
+    height: 200px;
+    width:  200px;
+    background-image: url(../img/Webbsida-vinterWU.png);
+    background-size: cover;
+    background-position: center;
+    justify-self: center;
+    align-self: flex-end;
 }
