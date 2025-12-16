@@ -25,7 +25,18 @@
     "main main main"
     "footer footer footer"
 }
+#wrapperend{
+    display: grid;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    grid-template: 10% 70% 20% / repeat(3, 3fr);
+    grid-template-areas: 
+    "header header header"
+    "main main main"
+    "footer footer footer";
 
+}
 a:hover{
     color: aliceblue;
 }
@@ -83,7 +94,7 @@ a:hover{
     grid-area: header;
     background-color: white;
     justify-content: stretch;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 
 .footer{
@@ -97,7 +108,7 @@ a:hover{
     border: 2px solid black;
 }
 .TitleLetter{
-    height: 60.5px;
+    height: 100%;
     letter-spacing: 140px;
     font-size: xx-large;
     overflow: hidden;
@@ -173,4 +184,57 @@ a:hover{
     background-position: center;
     justify-self: center;
     align-self: flex-end;
+}   
+#cards2{
+    background-image: url(../img/maxine-guo-S73Q02otMCY-unsplash.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;  
+    background-position: center; 
 }
+
+#cards3{
+    background-image: url(../img/van-dara-ZFgS3cRGUNs-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#cards4{
+    background-image: url(../img/fotografia-de-alimentos-YLQ_FQ5r0wI-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position:center;
+}
+
+#cards5{
+    background-image: url(../img/andres-rodriguez-3jJtXTwLZw4-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#cards6{
+    background-image: url(../img/usman-aslam-RNeeeiAnEyw-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.rounded{
+    border-radius: 25px;
+}
+
+#endcard1{
+    
+}   
+#endcard2{
+    background-image: url(../img/jon-tyson-5PmmgCuPX3s-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#endcard3{
+    
+}
+#endmain{
+    
+}
+
