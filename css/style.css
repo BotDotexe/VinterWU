@@ -226,13 +226,19 @@ a:hover{
 }
 
 #endcard1{
-    
+    display: flex; 
+    align-items: center;  
+    flex-direction: column; 
 }   
 #endcard2{
     display: flex;
+    align-items: center;
     flex-direction: column;
 }
 #endcard3{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     
 }
 #endmain{
@@ -266,4 +272,9 @@ a:hover{
 }
 .padding{
     padding: 20px;
+}
+.imageend{
+    
+    width: 40%;
+    height: 50%;
 }
