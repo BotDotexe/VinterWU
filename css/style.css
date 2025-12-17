@@ -6,9 +6,9 @@
     grid-template:10% repeat(2,26%) 27% 10% / 20% 60% 20%;
     grid-template-areas: 
     "header header header"
-    "aside aside1 aside2"
-    "aside aside1 aside2"
-    "aside aside1 aside2"
+    "aside startmain aside2"
+    "aside startmain aside2"
+    "aside startmain aside2"
     "footer footer footer";
 }
 #wrappercards{
@@ -72,10 +72,8 @@ a:hover{
 .aside2{
     grid-area: aside2;
     border: 2px black;
-    border-left: none;
-    border-top: solid;
-    border-bottom: solid;
     padding: 20px;
+    margin: 10px;
 }
 
 .aside{
@@ -98,8 +96,12 @@ a:hover{
 }
 
 .footer{
+    display: flex;
     grid-area: footer;
-    background-color: hotpink;
+    background-image: linear-gradient(to bottom, orange, white);
+    text-decoration: underline;
+    align-items: center;
+    justify-content: space-around;
 }
 .orangeborder{
     border:2px solid orangered;
@@ -227,9 +229,8 @@ a:hover{
     
 }   
 #endcard2{
-    background-image: url(../img/jon-tyson-5PmmgCuPX3s-unsplash.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
+    display: flex;
+    flex-direction: column;
 }
 #endcard3{
     
@@ -237,4 +238,32 @@ a:hover{
 #endmain{
     
 }
+.startmain{
+    display: grid;
+    grid-area: startmain;
+    /*border: 2px black solid;*/
+    height: auto;
+    width: auto;
+    margin: 10px;
+}
 
+#asidestart1{
+    background-image: url(../img/jon-tyson-5PmmgCuPX3s-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin: 10px;
+}
+
+.margin{
+    margin: 10px;
+}
+.lined{
+    text-decoration: underline;
+}
+.shadow{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+}
+.padding{
+    padding: 20px;
+}
